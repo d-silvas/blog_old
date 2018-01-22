@@ -1,0 +1,1 @@
+* Remove prismjs and use homemade CSS, which supports colors, styles etc.

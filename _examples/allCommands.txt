@@ -1,0 +1,31 @@
+- Analazing the status of the interfaces
+show interfaces [fa0/1] status
+show interfaces [fa0/1]
+show interfaces [fa0/1] counters
+show interfaces [fa0/1] switchport
+
+SWITHCES
+- Finding entries in the MAC address table
+show mac address-table dynamic
+show mac address-table dynamic address 0200.1111.1111
+show mac address-table dynamic interface fa0/1
+show mac address-table dynamic vlan 1
+- Managing the MAC address table: aging, clearing
+show mac address-table aging time
+show mac address-table count
+clear mac address-table dynamic
+- SSH
+show ip ssh
+show ssh
+- Verifying IPv4 on a switch
+show dhcp lease
+show interfaces vlan1
+show ip default-gateway
+-Verifying Port Security
+show port-security [interface fa0/1]
+show mac address-table secure [interface fa0/1]
+show mac address-table static [interface fa0/1]
+
+
+GENERAL/IOS
+show history
