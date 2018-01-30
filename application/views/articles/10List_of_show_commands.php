@@ -13,6 +13,10 @@ a.show-command {
 }
 li.first-level {
   font-size: 1.5rem;
+  margin-top: 15px;
+}
+li.first-level h4 {
+  margin: 0;
 }
 </style>
 <!--<img src="../../../assets/images/00setup.png" alt="Setup">-->
@@ -25,6 +29,11 @@ li.first-level {
     <a href="#ospf-show-ip-ospf-neighbor" class="show-command"><code># <b>show ip ospf neighbor</b></code></a><br>
     <a href="#ospf-show-ip-route" class="show-command"><code># <b>show ip route</b></code></a><br>
     <a href="#ospf-show-run-section-ospf" class="show-command"><code># <b>show run | section ospf</b></code></a><br>
+  </li>
+  <li class="first-level">
+    <h4>STP</h4>
+    <a href="#stp-show-cdp-neighbor" class="show-command"><code># <b>show cdp neighbor</b></code></a><br>
+    <a href="#stp-show-spanning-tree" class="show-command"><code># <b>show spanning-tree</b></code></a><br>
   </li>
 </ul>
 <br><br>
@@ -179,3 +188,63 @@ O*E2 0.0.0.0/0 [110/1] via 10.0.0.2, 00:01:34, FastEthernet0/0
 </pre>
 <pre id="ospf-show-run-section-ospf" class="terminal">
 </pre>
+<br>
+<ul>
+  <li class="first-level">
+    <h4>STP</h4>
+  </li>
+</ul>
+<pre id="stp-show-cdp-neighbor" class="terminal">S1# <b>show cdp neighbor</b>
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+S3               Fas 1/3            176          S I      3725      Fas 1/0
+S2               Fas 1/2            152          S I      3725      Fas 1/0
+S5               Fas 1/5            127          S I      3725      Fas 1/0
+S4               Fas 1/4            173          S I      3725      Fas 1/0
+</pre>
+<pre id="stp-show-spanning-tree" class="terminal">! On a real switch we would see port role as well (Root/Desg/Altn)
+S1# <b>show spanning-tree</b>
+VLAN1
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32768
+             Address     c205.0971.0000
+             Cost        19
+             Port        46 (FastEthernet1/5)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32768
+             Address     c207.0961.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface                                   Designated
+Name                 Port ID Prio Cost  Sts Cost  Bridge ID            Port ID
+-------------------- ------- ---- ----- --- ----- -------------------- -------
+FastEthernet1/2      128.43   128    19 BLK    19 32768 c206.0961.0000 128.41
+FastEthernet1/3      128.44   128    19 FWD    19 32768 c207.0961.0000 128.44
+FastEthernet1/4      128.45   128    19 FWD    19 32768 c207.0961.0000 128.45
+FastEthernet1/5      128.46   128    19 FWD     0 32768 c205.0971.0000 128.41
+
+
+S5# <b>show spanning-tree</b>
+VLAN1
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32768
+             Address     c205.0971.0000
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32768
+             Address     c205.0971.0000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 300
+
+Interface                                   Designated
+Name                 Port ID Prio Cost  Sts Cost  Bridge ID            Port ID
+-------------------- ------- ---- ----- --- ----- -------------------- -------
+FastEthernet1/0      128.41   128    19 FWD     0 32768 c205.0971.0000 128.41
+FastEthernet1/1      128.42   128    19 FWD     0 32768 c205.0971.0000 128.42
+</pre>
+<br>
