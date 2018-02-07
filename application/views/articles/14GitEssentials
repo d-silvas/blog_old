@@ -1,0 +1,92 @@
+<style>
+</style>
+<!--<img src="../../../assets/images/00setup.png" alt="Setup">-->
+<h4 class="subtitle">Basic workflow</h4>
+<ul>
+  <li>
+    A git project has 3 parts:
+  </li>
+</ul>
+[...]
+<ul>
+  <li>
+    Clone the repo
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest</b></font>$ git clone https://cyberFELIX@bitbucket.org/cyberFELIX/felix-test-repo.git
+Cloning into &apos;felix-test-repo&apos;...
+Password for &apos;https://cyberFELIX@bitbucket.org&apos;:
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+</pre>
+<ul>
+  <li>
+    Add a new file and check the status of the repository
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git status
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	<font color="#CC0000">index.js</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</pre>
+<ul>
+  <li>
+    Send the new file to the staging area
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git add .
+</pre>
+<ul>
+  <li>
+    Modify the file and show differences between the staging area and
+    the working directory
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ echo &quot;var newVar = 7&quot; &gt;&gt; index.js
+<font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git diff
+<b>diff --git a/index.js b/index.js</b>
+<b>index 7921bd9..ea3cfaf 100644</b>
+<b>--- a/index.js</b>
+<b>+++ b/index.js</b>
+<font color="#06989A">@@ -1 +1,2 @@</font>
+ var hola = &apos;hello&apos;
+<font color="#4E9A06">+var newVar = 7</font>
+</pre>
+<ul>
+  <li>
+    Commit: permanently store the changes from the staging area inside the
+    repository.
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git add .
+<font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git commit -m &quot;First modifications&quot;
+[master c48a54d] First modifications
+ 1 file changed, 2 insertions(+)
+ create mode 100644 index.js
+</pre>
+<ul>
+  <li>
+    See the list of commits.
+  </li>
+</ul>
+<pre class="terminal"><font color="#4E9A06"><b>user@ubuntupc</b></font>:<font color="#3465A4"><b>~/GitTest/felix-test-repo</b></font>$ git log
+<font color="#C4A000">commit c48a54d89b2ff4310ff4d41fb8d3bd85daa54b6e (</font><font color="#06989A"><b>HEAD -&gt; </b></font><font color="#4E9A06"><b>master</b></font><font color="#C4A000">)</font>
+Author: d-silvas &lt;d.silvas@outlook.com&gt;
+Date:   Fri Feb 2 12:56:00 2018 +0000
+
+    First modifications
+
+<font color="#C4A000">commit 36d6a86a64ee49ba6e10b3e6a5360006a5ff93dd (</font><font color="#CC0000"><b>origin/master</b></font><font color="#C4A000">, </font><font color="#CC0000"><b>origin/HEAD</b></font><font color="#C4A000">)</font>
+Author: David Silva &lt;felix@cyberratss.london&gt;
+Date:   Fri Feb 2 12:33:57 2018 +0000
+
+    README.md created online with Bitbucket
+</pre>
