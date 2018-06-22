@@ -1,20 +1,15 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-    padding-top: 3rem;
-    color: #5a5a5a;
+  padding-top: 3rem;
+  color: #5a5a5a;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
-
 /* SCTICKY FOTER */
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
 }
 .footer {
   position: absolute;
@@ -28,4 +23,12 @@ body {
 }
 .footer p {
   margin-bottom: 0;
+}
+/* "Fake" Links */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+  pointer-events: none;
 }

@@ -1,7 +1,33 @@
 <style>
 </style>
 <!--<img src="../../../assets/images/00setup.png" alt="Setup">-->
-<p>Note: Add links to the titles</p>
+<p>An <code>OverTheWire: Bandit</code> walktrhough with some comments.</p>
+<ul>
+  <li><a href="#00">Level 0</a></li>
+  <li><a href="#01">Level 1</a></li>
+  <li><a href="#02">Level 2</a></li>
+  <li><a href="#03">Level 3</a></li>
+  <li><a href="#04">Level 4</a></li>
+  <li><a href="#05">Level 5</a></li>
+  <li><a href="#06">Level 6</a></li>
+  <li><a href="#07">Level 7</a></li>
+  <li><a href="#08">Level 8</a></li>
+  <li><a href="#09">Level 9</a></li>
+  <li><a href="#10">Level 10</a></li>
+  <li><a href="#11">Level 11</a></li>
+  <li><a href="#12">Level 12</a></li>
+  <li><a href="#13">Level 13</a></li>
+  <li><a href="#14">Level 14</a></li>
+  <li><a href="#15">Level 15</a></li>
+  <li><a href="#16">Level 16</a></li>
+  <li><a href="#17">Level 17</a></li>
+  <li><a href="#18">Level 18</a></li>
+  <li><a href="#19">Level 19</a></li>
+  <li><a href="#20">Level 20</a></li>
+  <li><a href="#*">Tips and Tricks</a></li>
+</ul>
+<hr>
+<a id="00" class="anchor"></a>
 <h4 class="subtitle"><b>[00]</b> Bandit level 0</h4>
 <ul>
   <li>
@@ -25,6 +51,7 @@ drwxr-xr-x 29 root    root    4096 Dec 28 14:34 <font color="#729FCF"><b>..</b><
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 </pre>
 <br>
+<a id="01" class="anchor"></a>
 <h4 class="subtitle"><b>[01]</b> Bandit level 1</h4>
 <ul>
   <li>
@@ -61,7 +88,8 @@ CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 </ul>
 
 <br>
-<h4 class="subtitle"><b>[03]</b> Bandit level 2</h4>
+<a id="02" class="anchor"></a>
+<h4 class="subtitle"><b>[02]</b> Bandit level 2</h4>
 <ul>
   <li>
     The password for the next level is stored in a file called
@@ -83,6 +111,7 @@ UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 </pre>
 
 <br>
+<a id="03" class="anchor"></a>
 <h4 class="subtitle"><b>[03]</b> Bandit level 3</h4>
 <ul>
   <li>
@@ -109,6 +138,7 @@ pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 </pre>
 
 <br>
+<a id="04" class="anchor"></a>
 <h4 class="subtitle"><b>[04]</b> Bandit level 4</h4>
 <ul>
   <li>
@@ -177,6 +207,7 @@ koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 </pre>
 
 <br>
+<a id="05" class="anchor"></a>
 <h4 class="subtitle"><b>[05]</b> Bandit level 5</h4>
 <ul>
   <li>
@@ -247,6 +278,7 @@ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 </pre>
 
 <br>
+<a id="06" class="anchor"></a>
 <h4 class="subtitle"><b>[06]</b> Bandit level 6</h4>
 <ul>
   <li>
@@ -272,6 +304,7 @@ HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 </pre>
 
 <br>
+<a id="07" class="anchor"></a>
 <h4 class="subtitle"><b>[07]</b> Bandit level 7 </h4>
 <ul>
   <li>
@@ -299,6 +332,7 @@ Adelaide&apos;s	qnWisXg0ExqA7ULLWd8qwV4xyCnxSyWk
 </pre>
 
 <br>
+<a id="08" class="anchor"></a>
 <h4 class="subtitle"><b>[08]</b> Bandit level 8</h4>
 <ul>
   <li>
@@ -323,6 +357,7 @@ UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 </pre>
 
 <br>
+<a id="09" class="anchor"></a>
 <h4 class="subtitle"><b>[09]</b> Bandit level 9</h4>
 <ul>
   <li>
@@ -353,6 +388,7 @@ q#yrggZ
 </pre>
 
 <br>
+<a id="10" class="anchor"></a>
 <h4 class="subtitle"><b>[10]</b> Bandit level 10</h4>
 <ul>
   <li>
@@ -369,6 +405,7 @@ data.txt: ASCII text
 </pre>
 
 <br>
+<a id="11" class="anchor"></a>
 <h4 class="subtitle"><b>[11]</b> Bandit level 11</h4>
 <ul>
   <li>
@@ -400,6 +437,7 @@ The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
   </a> third answer.
 </li></ul></ul>
 <br>
+<a id="12" class="anchor"></a>
 <h4 class="subtitle"><b>[12]</b> Bandit level 12</h4>
 <ul>
   <li>
@@ -554,6 +592,7 @@ The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 </pre>
 
 <br>
+<a id="13" class="anchor"></a>
 <h4 class="subtitle"><b>[13]</b> Bandit level 13</h4>
 <ul>
   <li>
@@ -600,6 +639,7 @@ This is a OverTheWire game server. More information on http://www.overthewire.or
 </pre>
 
 <br>
+<a id="14" class="anchor"></a>
 <h4 class="subtitle"><b>[14]</b> Bandit level 14</h4>
 <ul>
   <li>
@@ -659,6 +699,7 @@ BfMYroe26WYalil77FoDi9qh59eK5xNr
 </pre>
 
 <br>
+<a id="15" class="anchor"></a>
 <h4 class="subtitle"><b>[15]</b> Bandit level 15</h4>
 <ul>
   <li>
@@ -872,6 +913,7 @@ closed
 </pre>
 
 <br>
+<a id="16" class="anchor"></a>
 <h4 class="subtitle"><b>[16]</b> Bandit level 16</h4>
 <ul>
   <li>
@@ -1119,6 +1161,7 @@ This is a OverTheWire game server. More information on http://www.overthewire.or
 
 #...
 </pre><br>
+<a id="17" class="anchor"></a>
 <h4 class="subtitle"><b>[17]</b> Bandit level 17</h4>
 <ul>
   <li>
@@ -1141,6 +1184,7 @@ xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 </pre>
 
 <br>
+<a id="19" class="anchor"></a>
 <h4 class="subtitle"><b>[19]</b> Bandit level 19</h4>
 <ul>
   <li>
@@ -1156,6 +1200,7 @@ IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 </pre>
 
 <br>
+<a id="18" class="anchor"></a>
 <h4 class="subtitle"><b>[18]</b> Bandit level 18</h4>
 <ul>
   <li>
@@ -1177,6 +1222,7 @@ drwxr-xr-x 29 root     root     4096 Dec 28 14:34 <font color="#3465A4"><b>..</b
 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 </pre>
 <br>
+<a id="20" class="anchor"></a>
 <h4 class="subtitle"><b>[20]</b> Bandit level 20</h4>
 <ul>
   <li>
@@ -1191,6 +1237,7 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 </ul>
 
 <br>
+<a id="21" class="anchor"></a>
 <h4 class="subtitle"><b>[01]</b> Bandit level 2</h4>
 <ul>
   <li>
@@ -1201,6 +1248,7 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
 
 <br>
+<a id="22" class="anchor"></a>
 <h4 class="subtitle"><b>[01]</b> Bandit level 2</h4>
 <ul>
   <li>
@@ -1215,6 +1263,7 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
 
 <br>
+<a id="*" class="anchor"></a>
 <h4 class="subtitle"><b>[*]</b> Tips and tricks</h4>
 <ul><li>
   Using <b>file</b> command to determine the filetype of all the files in
@@ -1308,7 +1357,7 @@ readme:       ASCII text
 </ul>
 
 
-<pre class="terminal"><font color="#8AE234"><b>user@ubuntupc</b></font>:<font color="#729FCF"><b>~/Documents</b></font>$ echo &quot;Va beqre gb trarengr gur vaivgr pbqr, znxr n CBFG erdhrfg gb /ncv/vaivgr/trarengr&quot; | tr &apos;A-Za-z&apos; &apos;N-ZA-Mn-za-m&apos;
+<pre class="terminal"><font color="#8AE234"><b>user@ubuntupc</b></font>:<font color="#729FCF"><b>~/Documents</b></font>$ echo &quot;Va beqre gb trarengr gur vaivgr pbqr, znxr n CBFG erdhrfg gb /ncv/vaivgr/trarengr&quot; | tr A-Za-z N-ZA-Mn-za-m
 In order to generate the invite code, make a POST request to /api/invite/generate
 </pre>
 
