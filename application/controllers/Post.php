@@ -18,13 +18,17 @@ class Post extends CI_Controller {
 	}
 
 	public function working_on() {
-		$data['categories'] = $this->Blog_Model->get_categories();
-		$this->template->js([PRISM_JS, 'common.js']);
-		$this->template->css([PRISM_CSS, 'post.css']);
-		$data['post'] = new stdClass();
-		$data['post']->id = -1;
-		$data['post']->title = "New Post";
-		$data['post']->content = $this->load->view("working_on", null, true);
-		$this->template->load('post', $data);
+		if (ENVIRONMENT === 'development') {
+			$data['categories'] = $this->Blog_Model->get_categories();
+			$this->template->js([PRISM_JS, 'common.js']);
+			$this->template->css([PRISM_CSS, 'post.css']);
+			$data['post'] = new stdClass();
+			$data['post']->id = -1;
+			$data['post']->title = "New Post";
+			$data['post']->content = $this->load->view("working_on", null, true);
+			$this->template->load('post', $data);
+		} else {
+			show_404();
+		}
 	}
 }

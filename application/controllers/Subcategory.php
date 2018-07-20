@@ -8,7 +8,7 @@ class Subcategory extends CI_Controller {
 		$this->load->model('Subcategory_Model');
 	}
 
-	public function index($subcat_id = 0) {
+	public function index ($subcat_id = 0) {
 		$data['categories'] = $this->Blog_Model->get_categories();
 		$data['subcategory'] = $this->Subcategory_Model->get_subcategory_details($subcat_id);
 		$data['subcat_id'] = $subcat_id;
@@ -18,7 +18,7 @@ class Subcategory extends CI_Controller {
 		$this->template->load('subcategory', $data);
 	}
 
-	public function get_subcategory_posts($subcat_id = 0) {
+	public function get_subcategory_posts ($subcat_id = 0) {
 		header('Content-Type: application/json');
 		echo json_encode($this->Subcategory_Model->get_subcategory_posts($subcat_id));
 	}

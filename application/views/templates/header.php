@@ -38,7 +38,7 @@
 						<?= $category->name ?>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
-					<?php foreach($category->subcategories as $subcategory): ?>
+					<?php foreach ($category->subcategories as $subcategory): ?>
 						<a class="dropdown-item" href="<?= base_url("index.php/subcategory/index/".$subcategory->id) ?>">
 							<?= $subcategory->name ?>
 						</a>
@@ -46,10 +46,11 @@
 					</div>
 				</li>
 				<?php endforeach; ?>
+				<?php if (ENVIRONMENT === 'development'): ?>
 				<li class="nav-item">
 					<a class="nav-link" href="<?= base_url("index.php/post/working_on/") ?>">Working on</a>
 				</li>
-
+				<?php endif; ?>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">

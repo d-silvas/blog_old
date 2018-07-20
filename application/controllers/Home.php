@@ -8,7 +8,7 @@ class Home extends CI_Controller {
 	}
 
 	public function index() {
-		$data["name"] = "PEPITO";
+		$data["name"] = "";
 		$data["categories"] = $this->Blog_Model->get_categories();
 		$this->template->css("home.css");
 		$this->template->load("home", $data);
