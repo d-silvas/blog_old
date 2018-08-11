@@ -32,3 +32,7 @@ a.anchor {
   visibility: hidden;
   pointer-events: none;
 }
+
+.container.marketing {
+  padding-top: 30px;
+}
