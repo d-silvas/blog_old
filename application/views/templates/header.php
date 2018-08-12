@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!--<link rel="icon" href="../../favicon.ico">-->
+	<meta name="description" content="Technology tips and tricks">
+	<meta name="author" content="David Silva Sanmartín">
+    <meta property="og:title" content="CyberTricks blog"/>
+    <meta property="og:image" content="<?= base_url("assets/images/capture.png") ?>"/>
+    <meta property="og:description" content="Technology tips and tricks"/>
+    <meta property="og:url" content="https://cybertricks.co.uk" />
+
+	<link rel="icon" href="<?= base_url("assets/images/favicon.png") ?>">
 
 	<title>CyberTricks blog</title>
 

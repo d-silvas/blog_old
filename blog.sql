@@ -7,6 +7,7 @@
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
+use db682466977;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -56,7 +57,7 @@ CREATE TABLE `posts` (
   `title` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
   `subcategory` int(11) NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `summary` varchar(512) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
